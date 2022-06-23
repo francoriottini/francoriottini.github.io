@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Franco Riottini, Horrible Cop, Launches Site"
+title: "Franco Riottini, Economist"
 date: 2014-04-30
 ---
 
