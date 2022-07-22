@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Franco Riottini Depetris / Site Title"
+title                    : "Franco Riottini Depetris"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
