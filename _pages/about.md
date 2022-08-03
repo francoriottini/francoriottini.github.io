@@ -14,6 +14,8 @@ I completed my undergraduate studies with an applied study on the agro-industria
 
 From 2019 to 2022 I've been working at the [Center for Studies of the Santa Fe’s Chamber of Commerce (BCSF)](https://www.bcsf.com.ar/ces/index.php), where I carried out macro and microeconomic analysis with a focus on the economic activity of the province.
 
+I've also been a teaching assistant in several subjects, including introductory subjects and also macroeconomics. Currently, I am teaching assistant of History of Economic Thought at UdeSA 
+
 My research interests are in development economics, international economics and economical history.
 
 This page is just getting started. More to come!
