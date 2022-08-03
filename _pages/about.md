@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Economist from the Universidad [Nacional del Litoral (UNL)](https://www.fce.unl.edu.ar/) in Santa Fe, Argentina. Currently, I'm doing a Master at [Universidad de San Andres (Udesa)](https://udesa.edu.ar/departamento-de-economia/maestria-en-economia).
+Economist from the Universidad [Nacional del Litoral (UNL)](https://www.fce.unl.edu.ar/) in Santa Fe, Argentina. Currently, I'm doing a Master at [Universidad de San Andres (UdeSA)](https://udesa.edu.ar/departamento-de-economia/maestria-en-economia).
 
 I completed my undergraduate studies with an applied study on the agro-industrial sector in Argentina, its exports and its comparative advantages in trade with the European Union between 2004 and 2019.
 
