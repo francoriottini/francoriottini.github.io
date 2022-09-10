@@ -9,51 +9,35 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+Academic Background
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Master in Economics, University of San Andres, 2022 (expected)
+* Bachelor's Degree in Economics, Universidad Nacional del Litoral, 2021
 
-Work experience
+Professional Experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Santa Fe’s Chamber of Commerce, Research and Services Center
+  * Junior Research Associate [04/2019 – 04/2022]. Elaboration of reports on the national and provincial economic situation, with special focus on international trade and the agriculture industry. Database management and development. Application of the ARIMA X13 model for the regression of the time series necessary for the elaboration of the ICASFe.
+  * Coordinator of the New Leaders Program (PND) [08/2019 – 04/2022]. Assistant in the organization of events and conferences.
+  
+Academic Experience
+======
+* Universidad de San Andr ́es (UdeSA), Buenos Aires, Argentina
+  * Teaching Assistant, History of Economic Thought.
+* Universidad Nacional del Litoral (UNL), Santa Fe, Argentina
+  * Teaching Assistant, Macroeconomics.
+  * Teaching Assistant, Introduction to Economics.
+  * Teaching Assistant, Introduction to Social Sciences.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
+Supplementary Training
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming
+  * Rosario’s Chamber of Commerce (BCR), Rosario, Argentina - Programming in R [2021]
+  * Universidad Nacional de San Martin - School of Science and Technology, Buenos Aires, Argentina - Python Programming [2020]
+* Languages
+  * UNL Language Center, Santa Fe, Argentina
+  * English Level 8 of 10 [2020]
+* Extras
+  * Santa Fe’s Chamber of Commerce, Santa Fe, Argentina - Specialization course in time series: SARIMA models, seasonal adjustment and long term trends.
+  * Universidad Nacional del Litoral (UNL), Santa Fe, Argentina - Bachelor’s Degree in Applied Mathematics [2018 – ] (Discontinued)
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
