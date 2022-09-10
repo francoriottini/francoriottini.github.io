@@ -22,7 +22,7 @@ Professional Experience
   
 Academic Experience
 ======
-* Universidad de San Andr ́es (UdeSA), Buenos Aires, Argentina
+* Universidad de San Andres (UdeSA), Buenos Aires, Argentina
   * Teaching Assistant, History of Economic Thought.
 * Universidad Nacional del Litoral (UNL), Santa Fe, Argentina
   * Teaching Assistant, Macroeconomics.
