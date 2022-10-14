@@ -9,6 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
+[Download my CV here (in english)](http://francoriottini.github.io/files/CV_Riottini_Franco_English.pdf)
+[Descargue mi CV aquí](http://francoriottini.github.io/files/CV Riottini Depetris.pdf)
+
 Academic Background
 ======
 * Master in Economics, University of San Andres, 2022 (expected)
