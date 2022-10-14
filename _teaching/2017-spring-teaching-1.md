@@ -1,5 +1,5 @@
 ---
-title: "Teaching Assistant"
+title: "Teaching Assistant - Introduction to Economics"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2017-spring-teaching-1
