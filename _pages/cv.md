@@ -10,7 +10,8 @@ redirect_from:
 {% include base_path %}
 
 [Download my CV here (in english)](http://francoriottini.github.io/files/CV_Riottini_Franco_English.pdf)
-[Descargue mi CV aquí](http://francoriottini.github.io/files/CV Riottini Depetris.pdf)
+
+[Descargue mi CV aquí](http://francoriottini.github.io/files/CV_Riottini_Depetris.pdf)
 
 Academic Background
 ======
