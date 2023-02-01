@@ -69,6 +69,9 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - title: Goodreads
+      url: https://www.goodreads.com/user/show/71630370-franco-riottini
+
 
 
 # Analytics
