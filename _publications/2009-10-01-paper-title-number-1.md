@@ -1,15 +1,15 @@
 ---
-title: "Paper Title Number 1"
+title: "Automatic Product Classification in International Trade: Machine Learning and Large Language Models"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /publication/2023-07-15-paper-title-number-1
+excerpt: 'This paper is about accurately classifying products, that is essential in international trade.'
+date: 2023-07-15
+venue: 'Working Paper'
+paperurl: 'http://academicpages.github.io/files/Marra, Riottini, Volpe (2023).pdf'
+citation: 'Marra de Artiñano, I., Riottini Depetris, F., & Volpe Martincus, C. (2023). &quot;Automatic Product Classification in International Trade: Machine Learning and Large Language Models.&quot; <i>(No. 12962). Inter-American Development Bank</i>.'
 ---
-This paper is about the number 1. The number 2 is left for future work.
+This paper is about accurately classifying products, that is essential in international trade.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+[Download paper here](http://academicpages.github.io/files/Marra, Riottini, Volpe (2023).pdf)
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+Recommended citation: Marra de Artiñano, I., Riottini Depetris, F., & Volpe Martincus, C. (2023). &quot;Automatic Product Classification in International Trade: Machine Learning and Large Language Models.&quot; <i>(No. 12962). Inter-American Development Bank</i>.
