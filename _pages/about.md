@@ -16,9 +16,7 @@ From 2019 to 2022 I've been working at the [Center for Studies of the Santa Feâ€
 
 I've also been a teaching assistant in several subjects, including introductory subjects and also macroeconomics. Currently, I am teaching assistant of History of Economic Thought at UdeSA 
 
-My research interests are in development economics, international economics and economical history.
-
-This page is just getting started. More to come!
+My research interests are in development economics, international economics and economic history. I'm also interested in the application of machine learning and large language models to economics.
 
 For more info
 ------
