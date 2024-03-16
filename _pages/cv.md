@@ -20,12 +20,16 @@ Professional Experience
 ======
 * PEC Consultant at IADB [12/2022 – ]. 
   * Research Assistant for Christian Volpe Martinicus. Database management, training of Machine Learning (ML) and Large Leanguage Models (LLM), applied econometric analysis.
+* Consultant at WB [02/2024 – ]
+* Pre-doc Asisstant at UdeSA [03/2023 – ].
 * Santa Fe’s Chamber of Commerce, Research and Services Center
   * Junior Research Associate [04/2019 – 04/2022]. Elaboration of reports on the national and provincial economic situation, with special focus on international trade and the agriculture industry. Database management and development. Application of the ARIMA X13 model for the regression of the time series necessary for the elaboration of the ICASFe.
   * Coordinator of the New Leaders Program (PND) [08/2019 – 04/2022]. Assistant in the organization of events and conferences.
   
 Academic Experience
 ======
+* University of San Andres (UdeSA).
+  * Economics I, (undergraduate course).
 * University of San Andres (UdeSA). Pre-doc Asisstant.
   *  Teaching Assistant, International Quantitative Macroeconomics (graduate course).
   *  Teaching Assistant, International Economics (undergraduate course).
