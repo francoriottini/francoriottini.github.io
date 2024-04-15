@@ -9,7 +9,7 @@ Download the latest version [here](http://francoriottini.github.io/files/Marra, 
 
 date: 2023-07-15
 venue: 'IDB Working Papers (Revise and Resubmit at Review of International Economics)'
-# paperurl: 'http://francoriottini.github.io/files/Marra, Riottini, Volpe (2023).pdf'
+paperurl: 
 citation: 'Marra de Artiñano, I., Riottini Depetris, F., & Volpe Martincus, C. (2023). &quot;Automatic Product Classification in International Trade: Machine Learning and Large Language Models.&quot; <i>(No. 12962). Inter-American Development Bank</i>.'
 ---
 Accurately classifying products is essential in international trade. Virtually all countries categorize products into tariff lines using the Harmonized System (HS) nomenclature for both statistical and duty collection purposes. In this paper, we apply and assess several
