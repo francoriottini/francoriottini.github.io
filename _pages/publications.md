@@ -24,16 +24,3 @@ author_profile: true
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
-
----
-layout: default
-title: "Debugging Publications"
----
-
-<h1>Publications in Collection</h1>
-<ul>
-{% for post in site.publications %}
-  <li>{{ post.title }}</li>
-{% endfor %}
-</ul>
-
