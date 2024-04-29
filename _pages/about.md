@@ -12,7 +12,7 @@ Economist from the Universidad [Nacional del Litoral (UNL)](https://www.fce.unl.
 
 From 2019 to 2022 I worked at the [Center for Studies of the Santa Fe’s Chamber of Commerce (BCSF)](https://www.bcsf.com.ar/ces/index.php), where I conducted macro and microeconomic analyses with a focus on the economic activity of the province.
 
-Since 2023 I have been working as a pre-doctoral assistant at the University of San Andrés and as a consultant for international organizations such as the Inter-American Development Bank and the World Bank. Since 2024 I have been teaching an introductory economics course at the University of San Andrés. You can check it out [here](https://github.com/francoriottini/EcoIUdeSA)!
+Since 2023 I have been working as a pre-doctoral assistant at UdeSA and as a consultant for international organizations such as the Inter-American Development Bank and the World Bank. Since 2024 I have been teaching an introductory economics. You can check it out [here](https://github.com/francoriottini/EcoIUdeSA)!
 
 My research interests are in development economics, international economics and economic history. I'm also interested in the application of machine learning and large language models to economics.
 
