@@ -11,9 +11,17 @@ author_profile: true
 
 {% include base_path %}
 
+{% for post in site.publications reversed %}
+  {% if post.status == 'completed' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
 ## Work in Progress
 
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  {% if post.status == 'in_progress' %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
 
