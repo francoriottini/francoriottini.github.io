@@ -14,7 +14,7 @@ From 2019 to 2022 I worked at the [Center for Studies of the Santa Fe’s Chambe
 
 Since 2023 I have been working as a pre-doctoral assistant at UdeSA and as a consultant for international organizations such as the Inter-American Development Bank and the World Bank. Since 2024 I have been teaching an introductory economics. You can check it out [here](https://github.com/francoriottini/EcoIUdeSA)!
 
-My research interests are in development economics, international economics and economic history. I'm also interested in the application of machine learning and large language models to economics.
+My research interests are in international economics, applied econometrics and development. I'm also interested in the application of machine learning and large language models to economics.
 
 For more info
 ------
