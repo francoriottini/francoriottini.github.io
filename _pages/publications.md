@@ -13,7 +13,18 @@ author_profile: true
 
 {% for post in site.publications reversed %}
   {% if post.status == 'completed' %}
-    {% include archive-single.html %}
+    {% if post.published %}
+      {% include archive-single.html %}
+    {% else %}
+      <div class="archive-single">
+        <h2 class="archive-title"><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+        <p>{{ post.type }} ({{ post.date | date: "%Y" }})</p>
+        <p>{{ post.excerpt }}</p>
+        {% if post.paperurl %}
+          <p>Download: <a href="{{ post.paperurl }}"><u>PDF</u></a></p>
+        {% endif %}
+      </div>
+    {% endif %}
   {% endif %}
 {% endfor %}
 
