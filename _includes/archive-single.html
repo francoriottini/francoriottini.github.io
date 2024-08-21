@@ -42,8 +42,12 @@
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
           {% if post.status == 'completed' %}
-            {% assign is_published = post.published | default: false %}
-            {% if is_published == true or is_published == "true" %}
+            {% assign is_published = false %}
+            {% if post.published == true or post.published == "true" or post.published == "True" %}
+              {% assign is_published = true %}
+            {% endif %}
+            
+            {% if is_published %}
               <p>Published in <i>{{ post.venue | default: "Unspecified Venue" }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
             {% else %}
               <p>{{ post.type | default: "Unpublished" }} ({{ post.date | default: "1900-01-01" | date: "%Y" }})</p>
