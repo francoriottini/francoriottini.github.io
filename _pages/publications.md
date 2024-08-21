@@ -13,12 +13,17 @@ author_profile: true
 
 {% for post in site.publications reversed %}
   {% if post.status == 'completed' %}
-    {% if post.published %}
+    {% assign is_published = false %}
+    {% if post.published == true or post.published == "true" %}
+      {% assign is_published = true %}
+    {% endif %}
+
+    {% if is_published %}
       {% include archive-single.html %}
     {% else %}
       <div class="archive-single">
         <h2 class="archive-title"><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
-        <p>{{ post.type }} ({{ post.date | date: "%Y" }})</p>
+        <p>{{ post.type | default: "Unpublished" }} ({{ post.date | date: "%Y" }})</p>
         <p>{{ post.excerpt }}</p>
         {% if post.paperurl %}
           <p>Download: <a href="{{ post.paperurl }}"><u>PDF</u></a></p>
