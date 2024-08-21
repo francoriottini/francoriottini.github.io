@@ -44,7 +44,7 @@
           {% if post.status == 'completed' %}
             {% if post.published == true %}
               <p>Published in <i>{{ post.venue | default: "Unspecified Venue" }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-            {% if post.published == false %}
+            {% elsif post.published == false %}
               <p><i>Unpublished</i></p>
             {% else %}
               <p>{{ post.type | default: "Unpublished" }} ({{ post.date | default: "1900-01-01" | date: "%Y" }})</p>
