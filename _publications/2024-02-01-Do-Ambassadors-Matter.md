@@ -8,7 +8,7 @@ venue: 'Universidad de San Andrés'
 paperurl: http://francoriottini.github.io/files/Riottini Depetris (2024).pdf
 citation: "Riottini Depetris, Franco (2024). 'Do Ambassadors Matter? The effect of ambassadors on trade promotion.' <i>Master Thesis at Universidad de San Andrés</i>."
 status: completed
-published: true
+published: false
 type: "Master's Thesis"
 ---
 
