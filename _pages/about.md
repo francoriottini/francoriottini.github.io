@@ -8,13 +8,25 @@ redirect_from:
   - /about.html
 ---
 
-Economist from the Universidad [Nacional del Litoral (UNL)](https://www.fce.unl.edu.ar/) in Santa Fe, Argentina. Currently pursuing a Master's degree at the  [Universidad de San Andres (UdeSA)](https://udesa.edu.ar/departamento-de-economia/maestria-en-economia). I completed my undergraduate studies with an applied study on the agro-industrial sector in Argentina, its exports and its comparative advantages in trade with the European Union between 2004 and 2019.
+<div style="text-align: justify;">
 
-From 2019 to 2022 I worked at the [Center for Studies of the Santa Fe’s Chamber of Commerce (BCSF)](https://www.bcsf.com.ar/ces/index.php), where I conducted macro and microeconomic analyses with a focus on the economic activity of the province.
+# Bio
 
-Since 2023 I have been working as a pre-doctoral assistant at UdeSA and as a consultant for international organizations such as the Inter-American Development Bank and the World Bank. Since 2024 I have been teaching an introductory economics. You can check it out [here](https://github.com/francoriottini/EcoIUdeSA)!
+I am a Master's in Economics at the Universidad de San Andrés [(UdeSA)](https://udesa.edu.ar/departamento-de-economia/maestria-en-economia) and a pre-doctoral assistant at the same institution. My primary research interests lie in international economics, applied econometrics, and economic development, with a focus on the application of machine learning techniques to economic analysis. You can find my Master's thesis [here](http://francoriottini.github.io/files/Riottini Depetris (2024).pdf).
 
-My research interests are in international economics, applied econometrics and development. I'm also interested in the application of machine learning and large language models to economics.
+Currently, I am working as a consultant for international organizations such as the Inter-American Development Bank and the World Bank. Previously, I was an Economic Analyst at the Center for Studies of the Santa Fe Chamber of Commerce (BCSF), where I conducted macro and microeconomic analyses focusing on regional economic activity.
+
+I hold a Bachelor's degree in Economics from the Universidad Nacional del Litoral [(UNL)](https://www.fce.unl.edu.ar/), where I completed a thesis on the Argentine agro-industrial sector, its exports, and comparative advantages in trade with the European Union.
+
+Since 2024, I have been teaching an introductory economics course, which you can explore [here](https://github.com/francoriottini/EcoIUdeSA).
+
+My research aims to integrate traditional econometric methods with advanced artificial intelligence techniques to address complex economic challenges and contribute to evidence-based policy development.
+
+</div>
+
+[Contact](friottinidepetris@udesa.edu.ar) | [CV](https://francoriottini.github.io/cv/) | [Publications](https://francoriottini.github.io/publications/) | [Projects](#)
+
+
 
 For more info
 ------
