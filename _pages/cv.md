@@ -13,14 +13,14 @@ redirect_from:
 
 Academic Background
 ======
-* Master in Economics, University of San Andres, 2022 (expected)
+* Master in Economics, University of San Andres, 2024
 * Bachelor's Degree in Economics, Universidad Nacional del Litoral, 2021
 
 Professional Experience
 ======
 * PEC Consultant at IADB [12/2022 – ]. 
   * Research Assistant for Christian Volpe Martinicus. Database management, training of Machine Learning (ML) and Large Leanguage Models (LLM), applied econometric analysis.
-* Consultant at WB [02/2024 – ]
+* Consultant at WB [02/2024 – ].
 * Pre-doc Asisstant at UdeSA [03/2023 – ].
 * Santa Fe’s Chamber of Commerce, Research and Services Center
   * Junior Research Associate [04/2019 – 04/2022]. Elaboration of reports on the national and provincial economic situation, with special focus on international trade and the agriculture industry. Database management and development. Application of the ARIMA X13 model for the regression of the time series necessary for the elaboration of the ICASFe.
