@@ -18,7 +18,6 @@ Since 2024, I have been teaching an introductory economics course, which you can
 
 My research aims to integrate traditional econometric methods with advanced artificial intelligence techniques to address complex economic challenges and contribute to evidence-based policy development.
 
----
 ## For more info
 
 For more info about me, you can contact me directly at friottinidepetris@udesa.edu.ar.
