@@ -16,8 +16,6 @@ I hold a Bachelor's degree in Economics from the Universidad Nacional del Litora
 
 Since 2024, I have been teaching an introductory economics course, which you can explore [here](https://github.com/francoriottini/EcoIUdeSA).
 
-My research aims to integrate traditional econometric methods with advanced artificial intelligence techniques to address complex economic challenges and contribute to evidence-based policy development.
-
 ## For more info
 
 For more info about me, you can contact me directly at friottinidepetris@udesa.edu.ar.
