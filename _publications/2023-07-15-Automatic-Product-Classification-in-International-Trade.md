@@ -6,7 +6,7 @@ excerpt: 'Accurate product classification is crucial in international trade. In 
 
 date: 2024-08-30
 venue: 'IDB Working Papers (Revise and Resubmit at Review of International Economics)'
-paperurl: http://francoriottini.github.io/files/Marra, Riottini, Volpe (2024).pdf
+paperurl: http://francoriottini.github.io/files/Marra, Riottini, Volpe (2023).pdf
 citation: 'Marra de Artiñano, I., Riottini Depetris, F., & Volpe Martincus, C. (2024). &quot;Automatic Product Classification in International Trade: Machine Learning and Large Language Models.&quot; <i>(No. 12962). Inter-American Development Bank</i>.'
 status: completed
 published: true
