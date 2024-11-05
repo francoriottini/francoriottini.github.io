@@ -28,7 +28,7 @@ Professional Experience
   
 Academic Experience
 ======
-* University of San Andres (UdeSA).
+* University of San Andres (UdeSA). Lecturer.
   * Economics I, (undergraduate course).
 * University of San Andres (UdeSA). Pre-doc Asisstant.
   *  Teaching Assistant, International Quantitative Macroeconomics (graduate course).
