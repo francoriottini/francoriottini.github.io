@@ -1,5 +1,5 @@
 ---
-title: "Economics I"
+title: "Lecturer - Economics I"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2025-autumn-teaching-9
