@@ -1,5 +1,5 @@
 ---
-title: "Teaching Assistant - International Quantitative Economics"
+title: "Teaching Assistant - International Quantitative Macroeconomics"
 collection: teaching
 type: "Graduate course"
 permalink: /teaching/2023-spring-teaching-8
