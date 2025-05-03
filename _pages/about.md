@@ -14,7 +14,7 @@ Currently, I am working as a consultant for international organizations such as 
 
 I hold a Bachelor's degree in Economics from the Universidad Nacional del Litoral [(UNL)](https://www.fce.unl.edu.ar/), where I completed a thesis on the Argentine agro-industrial sector, its exports, and comparative advantages in trade with the European Union.
 
-Since 2024, I have been teaching an introductory economics course, which you can explore [here](https://github.com/francoriottini/EcoIUdeSA).
+Since 2024, I have been teaching an introductory economics course, which you can explore [here](https://github.com/francoriottini/EcoIUdeSA). In 2025 Maria Victoria Rosino joined me as a co-teacher. We are currently working on a project to improve the course's content and make it more interactive for students. You can find his slides [here](https://github.com/francoriottini/EcoIUdeSA).
 
 ## For more info
 
