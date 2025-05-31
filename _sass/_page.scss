@@ -49,8 +49,12 @@
 }
 
 .page__content {
-  
+
   text-align: justify;
+  -webkit-hyphens: auto; /* For WebKit browsers like Safari */
+  -ms-hyphens: auto;     /* For Internet Explorer */
+  hyphens: auto;         /* Standard */
+  
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
