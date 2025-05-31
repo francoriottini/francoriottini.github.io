@@ -39,3 +39,11 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* Justificar el texto de los párrafos en el contenido del post */
+.page__content p {
+  text-align: justify;
+  -webkit-hyphens: auto; /* Para navegadores WebKit como Safari */
+  -ms-hyphens: auto;     /* Para Internet Explorer */
+  hyphens: auto;         /* Estándar */
+}
