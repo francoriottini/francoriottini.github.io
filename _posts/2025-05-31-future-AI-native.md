@@ -1,6 +1,6 @@
 ---
 title: 'Nativos de IA'
-date: 2025-06-01
+date: 2025-05-31
 permalink: /posts/2025/06/AI-native/
 # tags:
 #   - cool posts
@@ -32,47 +32,18 @@ Por último, y tal vez lo que da una luz de esperanza a los que creemos que la I
 
 En síntesis, los **nativos de IA** se caracterizan por: una **interacción fluida y normalizada con sistemas inteligentes** en lo cotidiano, expectativas de **personalización y respuesta inmediata** de la tecnología, una incorporación de la IA en su aprendizaje, juego y comunicación desde la infancia, y la necesidad de desarrollar tempranamente **nuevas alfabetizaciones y criterios** (como la comprensión de sesgos algorítmicos) para navegar un mundo donde la frontera entre lo humano y lo artificial es borrosa. Muchas de estas características los diferencian de las generaciones previas de nativos digitales, como se analiza a continuación.
 
-Bueno, ya tenemos una idea más clara de estos "nativos de IA", los pibes que vienen con otro chip. Pero la pregunta del millón, y un poco la que me disparó toda esta reflexión en clase, es: si estos son los que van a copar el mercado laboral en unos años, ¿qué habilidades que se van a necesitar? Y, más importante para los que ya estamos en la cancha (sí, te hablo a vos, nativo digital que peina algunas canas digitales), ¿cómo preparamos para no quedarnos afuera mirando cómo pasa el tren de la IA? Acá no tengo la bola de cristal, y si alguien te dice que la tiene, probablemente te esté vendiendo humo. Pero sí podemos empezar a pensar por dónde va a ir la cosa, basándonos en lo que ya estamos viendo y en cómo estos nativos de IA interactúan con el mundo.
+Bueno, ya tenemos una idea más clara de quiénes son estos “nativos de IA” y de por qué vienen con otro chip. Ahora bien, la gran pregunta que surgió en clase es: si ellos serán los que coparán el mercado laboral dentro de unos años, ¿qué habilidades serán indispensables? Y, al mismo tiempo, ¿qué podemos hacer nosotros, los nativos digitales que ya tenemos algunas canas tecnológicas, para no quedarnos viendo cómo pasa el tren de la IA? Antes de seguir, aclaro algo: nadie tiene la bola de cristal. Quienes digan que saben exactamente qué va a pasar están, en el mejor de los casos, opinando y en el peor, vendiendo humo. Sin embargo, a partir de lo que ya vemos hoy en la interacción de los jóvenes con la IA, y de lo que proponen varios expertos, podemos intuir qué aptitudes tendrán más valor, y pensar cómo cultivarlas tanto en los más chicos como en nosotros. En este sentido, me parece que hay 4 pilares fundamentales para discutir y pensar en cómo adaptarnos a los cambios que la IA traerá al mercado laboral:
 
-- **Pensamiento Crítico y Analítico**: Si la IA te puede tirar datos, resúmenes y hasta borradores de texto rápidamente, lo que va a valer oro es tu capacidad para analizar esa información, verle los hilos, encontrarle los errores, los sesgos (¡porque la IA los tiene!) y tomar decisiones con cabeza. No es solo consumir lo que te da la máquina, sino preguntarte: ¿esto tiene sentido? ¿Es ético? ¿Cómo lo mejoro? Va a llevar bastante más tiempo que la IA pueda generar respuestas éticas y críticas, que pueda ser imaginativa y creativa, o que pueda entender el contexto de una situación compleja. Por eso, la capacidad de pensar críticamente y analizar información va a ser clave. No te quedes con lo primero que te diga la IA; cuestioná, investigá y formate tu propia opinión.
+### 1. **Pensamiento Crítico y Análisis Ético**
+En un mundo donde la IA te brinda datos, resúmenes o borradores en segundos, lo verdaderamente valioso va a ser tu capacidad para evaluar la confiabilidad de esa información, detectar sesgos y tomar decisiones con criterio propio, modificar el texto que te devuelve la IA y modificarlo para adaptarlo a tus necesidades. La IA puede hacer mucho, pero no puede reemplazar el juicio humano. Por eso, cada vez que uses un chatbot o un algoritmo, mi recomendación es que te preguntes de donde vino esa respuesta (la fuente) y si es proclive a tener algún tipo de sesgo. Busca generar un _bias-sense_, una especie de sentido que te permita identificar cuándo una IA puede estar sesgada. 
 
-- **Creatividad y Originalidad**: La IA puede generar cosas increíbles, desde imágenes hasta música, basándose en patrones que aprendió. Pero la chispa original, la idea loca que rompe el molde, esa conexión inesperada entre conceptos… por ahora, sigue siendo muy nuestra. Y probablemente sea cada vez más valorada. Pensemos en usar la IA como un trampolín para nuestras propias ideas, no como un reemplazo. La IA hoy en día puede resolver conjeturas matemáticas. Pero no puede inventar la hipótesis de Riemann o la teoría de cuerdas. La creatividad humana sigue siendo única y difícil de replicar por máquinas (obvio, _"Artificial General Intelligence"_ al margen, discusión que podemos tener en otro momento).
+Analizá el contexto. Muchas veces las respuestas que da son erroneas porque el contexto con el que trabaja es limitado. No solo será importante aprender a darle el contexto (del que después voy a hablar), sino también identificar cuando la IA no tiene suficiente información para darte una respuesta que vos puedas simplemente copiar y pegar. 
 
-- **Inteligencia Emocional y Habilidades Sociales**: En un mundo donde la interacción con máquinas es moneda corriente, la capacidad de empatizar, colaborar de verdad con otros humanos, liderar equipos, comunicar ideas complejas de forma clara y generar confianza va a ser fundamental. Esas son cosas que a la IA, por más avanzada que esté, le cuesta. Incrementá tu tolerancia a la frustración, tu capacidad de escuchar y entender a los demás, y tu habilidad para resolver conflictos. La IA puede hacer muchas cosas, pero no puede reemplazar la conexión humana genuina.
+### 2. **Creatividad y Originalidad**
+Las máquinas pueden generar textos, imágenes o música apoyándose en grandes bases de datos, pero el salto creativo –esa idea inesperada, ese rumbo completamente distinto– sigue siendo terreno netamente humano. Usa la IA como un "punto de partida" para explorar nuevas ideas, pero no te limites a lo que te ofrece. Es mucho más sencillo leer lo que te dice y apropiartelo, pero no es un ejercicio que te de una habilidad a futuro. La creatividad es una habilidad que seguro puede entrenarse, al menos un poco, y la IA puede ser una herramienta para potenciarla o un aliciente que la carcoma.
 
-- **Adaptabilidad y Aprendizaje Continuo**: Si algo nos enseñan los nativos de IA es que el cambio es la única constante. Las herramientas de IA evolucionan a una velocidad de locos. La capacidad de aprender rápido cosas nuevas, desaprender lo que ya no sirve y estar siempre abierto a nuevas formas de hacer las cosas va a ser crucial. Olvidate de estudiar una carrera y listo; acá vamos a tener que ser estudiantes toda la vida. En este sentido, hay que tener una mínima alfabetización en IA. No te digo que todos tengamos que ser programadores expertos en IA, pero sí vamos a necesitar entender los fundamentos: cómo aprenden estos sistemas, qué pueden y qué no pueden hacer, cuáles son sus limitaciones y riesgos. Esto es básico para poder usarlos bien.
-
-- **Habilidad para "Preguntarle" a la IA**: Suena a chiste, pero saber cómo pedirle las cosas a una IA para obtener los mejores resultados se está convirtiendo en una habilidad en sí misma. Un buen *prompt* te puede ahorrar horas de trabajo o darte un resultado infinitamente mejor. Además puede ayudarte a no atrofiarte con la IA, a no depender de ella para todo. Aprender a formular preguntas claras y precisas, y a interpretar las respuestas de la IA, va a ser una habilidad clave. No es solo saber usar herramientas, sino saber cómo interactuar con ellas de forma efectiva.
-
-## ¿Y nosotros qué? Estrategias para adaptarse (sin pánico) a la era de la IA
-
-Ya vimos qué se espera de las nuevas generaciones que crecen con la inteligencia artificial bajo el brazo. Pero, ¿qué hay para los que ya venimos con varios gigabytes de experiencia acumulada? ¿Aquellos que aprendimos a jugar con el Arkanoid o el Family Game antes de conocer a Alexa? ¿Nos jubilamos? En absoluto. Tengo algunas ideas concretas para que quienes no nacimos en esta era tecnológica podamos adaptarnos sin quedar (tan) rezagados.
-
-### 1. Usarla sin miedo: el primer paso es involucrarse
-
-Puede sonar evidente, pero es fundamental: si no empezás a experimentar con estas herramientas, nunca las vas a comprender del todo. Creá una cuenta en la plataforma que esté en auge (ChatGPT, Gemini, algún generador de imágenes, etc.) y empezá a explorar. Pedile que te escriba un poema sobre un tema absurdo, que te resuma algo que ya sabés, que resuelva un problema simple. Solo así vas a perder el miedo inicial y empezar a entender cómo funciona y cómo puede ayudarte.
-
-### 2. Con criterio y responsabilidad: no permitas que piense por vos
-
-La IA es una herramienta poderosa, pero su uso debe ser estratégico. No puede reemplazar tu capacidad de razonar, analizar o decidir. Usarla de forma acrítica puede atrofiar nuestra habilidad para pensar por cuenta propia. El equilibrio es clave: aprovechar sus capacidades sin dejar de involucrarnos activamente en los procesos. Como bien señala un video compartido por Galiani, la IA puede servir para estudiar mejor, no para que estudie por vos. Usala como aliada, no como sustituto.
-
-### 3. Integrarla a tu entorno: porque llegó para quedarse
-
-Te interese o no, la IA va a estar presente en la mayoría de los trabajos —si no lo está ya—. En lugar de resistirte, empezá a pensar cómo puede ayudarte en tus tareas cotidianas: ¿qué procesos repetitivos podrías automatizar?, ¿qué parte de tu trabajo podría simplificarse para que puedas concentrarte en lo esencial? La clave es encontrar la "beta" que te beneficie directamente, adaptándola a tu contexto y tus habilidades.
-
-### 4. Reforzar lo más humano: pensamiento crítico, creatividad y ética
-
-La IA puede generar textos, imágenes, música. Pero todavía no puede replicar la profundidad del juicio humano: conectar ideas inesperadas, leer entre líneas, entender contextos complejos o tomar decisiones éticas. Ese sigue siendo nuestro diferencial. Aprovechá la IA como un asistente potente, pero recordá que la interpretación, la sensibilidad y el criterio siguen siendo tareas humanas. Ahí está nuestro valor agregado.
-
-### 5. Moverse con esperanza, no con miedo
-
-Es comprensible preocuparse por los cambios que traerá la IA en el mundo del trabajo. Algunos puestos desaparecerán, otros emergerán. Pero si la tecnología efectivamente aumenta la productividad, como todo indica, también debería abrir la puerta a una redistribución del tiempo: menos horas de trabajo, más espacio para el ocio, la formación o el desarrollo personal. Esta transformación puede ser una oportunidad para mejorar la calidad de vida, siempre que nos organicemos colectivamente con inteligencia. Vale la pena pensar en ese horizonte.
-
-
-
-
-
-
+### 3. **Inteligencia Emocional y Habilidades Sociales**
+Aunque la IA –con el tiempo– mejore en reconocer patrones emocionales, no reemplaza la empatía auténtica, la colaboración real ni la capacidad de liderazgo en momentos complejos.
 
 
 
