@@ -5,6 +5,11 @@ permalink: /publications/
 author_profile: true
 ---
 
+<div class="archive-intro" style="margin-bottom: 2em; font-size: 1em; line-height: 1.6;">
+  <p>Here you will find my publications, works in progress, and other relevant documents.</p>
+  <p>I hope you find them interesting!</p>
+</div>
+
 {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{ author.googlescholar }}">my Google Scholar profile</a>.</u>
 {% endif %}

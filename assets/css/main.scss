@@ -40,10 +40,28 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-/* Justificar el texto de los párrafos en el contenido del post */
+// Estilos personalizados
+
+// Para el contenido principal de posts y páginas estándar (como tu bio)
 .page__content p {
   text-align: justify;
   -webkit-hyphens: auto; /* Para navegadores WebKit como Safari */
   -ms-hyphens: auto;     /* Para Internet Explorer */
   hyphens: auto;         /* Estándar */
+}
+// Para los extractos de los items en listas de archivo (publicaciones, etc.)
+// La clase .archive__item-excerpt ya es un <p> en tu caso, así que no necesitamos "p" después.
+.archive__item-excerpt {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+// Para el texto introductorio en páginas de archivo (blog, publicaciones)
+// Asume que envolviste la intro en <div class="archive-intro"><p>...</p></div>
+.archive-intro p {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
