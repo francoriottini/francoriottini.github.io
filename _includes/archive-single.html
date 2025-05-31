@@ -46,7 +46,6 @@
             {% if post.published == true or post.published == "true" or post.published == "True" %}
               {% assign is_published = true %}
             {% endif %}
-            
             {% if is_published %}
               <p><i>{{ post.venue | default: "Unspecified Venue" }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
             {% else %}
@@ -58,7 +57,9 @@
             <p>{{ post.type | default: "Publication" }} ({{ post.date | default: "1900-01-01" | date: "%Y" }})</p>
           {% endif %}
         {% elsif post.date %}
+          {% comment %} 
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+          {% endcomment %}
         {% else %}
           <p>No date specified</p>
         {% endif %}
