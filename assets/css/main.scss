@@ -52,7 +52,7 @@
 }
 // Para los extractos de los items en listas de archivo (publicaciones, etc.)
 .archive__item-excerpt { // Asegúrate que el nombre de la clase sea exacto
-  text-align: justify;
+  text-align: justify !important;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
@@ -65,3 +65,4 @@
   -ms-hyphens: auto;
   hyphens: auto;
 }
+
