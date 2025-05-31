@@ -8,7 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-I have a Master's degree in Economics from the Universidad de San Andrés [(UdeSA)](https://udesa.edu.ar/departamento-de-economia/maestria-en-economia) and I am pre-doctoral assistant at the same institution. My primary research interests lie in international economics, applied econometrics, and economic development, with a focus on the application of machine learning techniques to economic analysis. You can find my Master's thesis [here](http://francoriottini.github.io/files/Riottini%20Depetris%20(2024).pdf) (won the award for Best Master Thesis 2024 from UdeSA!).
+I hold a Master's degree in Economics from the Universidad de San Andrés (UdeSA), where I have also been working as a pre-doctoral assistant. **This coming August, I will begin my PhD in Economics at the University of Michigan.** My primary research interests lie in international economics, applied econometrics, and economic development, with a focus on the application of machine learning techniques to economic analysis. You can find my Master's thesis [here](http://francoriottini.github.io/files/Riottini%20Depetris%20(2024).pdf) (which received the Best Master Thesis Award 2024 from UdeSA!).
+
 
 Currently, I am working as a consultant for international organizations such as the Inter-American Development Bank and the World Bank. Previously, I was an Economic Analyst at the Center for Studies of the Santa Fe Chamber of Commerce (BCSF), where I conducted macro and microeconomic analyses focusing on regional economic activity.
 
