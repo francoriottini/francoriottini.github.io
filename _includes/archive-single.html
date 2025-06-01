@@ -64,11 +64,11 @@
           <p>No date specified</p>
         {% endif %}
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
+    <!-- {% if post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description" style="text-align: justify;">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description" style="text-align: justify;"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
-    {% endif %}
+    {% endif %} -->
     
     {% if post.citation and post.paperurl %}
       <p>Recommended citation: {{ post.citation }}</p>
