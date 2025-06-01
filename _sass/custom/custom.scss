@@ -1,3 +1,20 @@
 .archive__item-excerpt {
   text-align: justify;
 }
+
+.post-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5em; /* Opcional: separa un poco los posts */
+}
+
+.post-header-flex .archive__item-title {
+  margin: 0;
+}
+
+.post-header-flex .page__meta {
+  font-size: 1em;
+  color: #aaa;
+  white-space: nowrap;
+}
