@@ -1,10 +1,8 @@
 ---
-title: 'Nativos de IA'
+title: 'An Incomplete Tought About Justice'
 date: 2025-03-01
-permalink: /posts/2025/03/AI-native/
+permalink: /posts/2025/03/Tought-About-Justice/
 ---
-
-# An Incomplete Tought About Justice
 
 Hace un tiempo la idea de justicia Rawlsiana (por el filósofo norteamericano [John Rawls]([https://es.wikipedia.org/wiki/John\_Rawls](https://es.wikipedia.org/wiki/John_Rawls))) me voló la cabeza. Para todo estudiante de economía es conocida (al menos por la famosa función de bienestar social), pero nunca la reflexioné, nunca me di el tiempo para pensarla y tratar de entender bien qué quiso decir. Mi impresión es que para los economistas está tan banalizado el concepto que la noción básica que se lleva un estudiante de Micro I o Micro II es de que, con el objetivo de maximizar el bienestar social, hay que **maximizar el bienestar del individuo más desfavorecido**. La idea detrás de esto no carece de fundamento 'rawlsiano', pero está tan simplificado que llevarse solo eso hace perder de vista que su planteo es uno de los **planteos filosóficos más importantes del siglo XX**. Si llegaste acá y no sabes que quiero decir con la idea de justicia rawlsiana, puedo intentar esbozar mi (probablemente injusta) interpretación:
 
