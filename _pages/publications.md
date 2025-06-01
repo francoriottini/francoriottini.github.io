@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 <div class="archive-intro" style="margin-bottom: 2em; font-size: 1em; line-height: 1.6;">
-  <p>Here you will find my publications, works in progress, and other relevant documents.</p>
+  <p>Here you will find my publications, works in progress, and other (<em>relevant</em>) documents.</p>
   <p>I hope you find them interesting!</p>
 </div>
 
