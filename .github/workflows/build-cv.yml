@@ -1,0 +1,38 @@
+name: build-cv
+
+on:
+  push:
+    paths:
+      - "cv-src/**"
+      - ".github/workflows/build-cv.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ensure resume class is present
+        run: |
+          test -f cv-src/resume.cls || (echo "Missing cv-src/resume.cls" && exit 1)
+
+      - name: Build PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: Riottini_Depetris_CV.tex
+          working_directory: cv-src
+          latexmk_use_xelatex: true
+
+      - name: Copy PDF to files/
+        run: |
+          mkdir -p files
+          cp cv-src/Riottini_Depetris_CV.pdf files/CV_Riottini_Franco_English.pdf
+
+      - name: Commit updated PDF
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update CV PDF"
+          file_pattern: "files/CV_Riottini_Franco_English.pdf"
