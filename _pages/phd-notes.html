@@ -7,54 +7,269 @@ author_profile: true
 
 {% include base_path %}
 
-<div class="archive-intro" style="margin-bottom: 2em; font-size: 1em; line-height: 1.6;">
-  <p>Notas del doctorado (PDF + fuente LaTeX).</p>
-  <p>
-    Estructura recomendada para carga automatica:
-    <code>files/phd-notes/&lt;semestre&gt;/&lt;materia&gt;/archivo.pdf</code>
-    y
-    <code>files/phd-notes/&lt;semestre&gt;/&lt;materia&gt;/archivo.tex</code>.
-  </p>
-  <p>Al agregar archivos en esa ruta, apareceran automaticamente en esta pagina al reconstruir/deployar el sitio.</p>
-</div>
-
 {% assign notes_root = "/files/phd-notes/" %}
 {% assign note_files = site.static_files | where_exp: "f", "f.path contains notes_root" | sort: "path" %}
 {% assign pdf_files = note_files | where_exp: "f", "f.extname == '.pdf'" %}
+{% assign tex_files = note_files | where_exp: "f", "f.extname == '.tex'" %}
 
-{% if pdf_files.size == 0 %}
-  <p>Todavia no hay notas cargadas.</p>
-{% else %}
-  {% assign semesters = pdf_files | group_by_exp: "item", "item.path | remove_first: notes_root | split: '/' | first" %}
+<style>
+  .phd-notes-page {
+    --phd-ink: #1f2937;
+    --phd-muted: #6b7280;
+    --phd-line: #d1d5db;
+    --phd-panel: #f8fafc;
+    --phd-accent: #0e7490;
+    --phd-accent-soft: #e6f7fb;
+    margin-top: 0.5rem;
+  }
 
-  {% for semester in semesters %}
-    <h2>{{ semester.name | replace: "-", " " | replace: "_", " " }}</h2>
+  .phd-notes-hero {
+    background: linear-gradient(135deg, #ffffff 0%, #f3f9fb 100%);
+    border: 1px solid var(--phd-line);
+    border-radius: 14px;
+    padding: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
 
-    {% assign courses = semester.items | group_by_exp: "item", "item.path | remove_first: notes_root | split: '/' | slice: 1, 1 | first" %}
-    {% for course in courses %}
-      <h3>{{ course.name | replace: "-", " " | replace: "_", " " }}</h3>
-      <ul>
-        {% for pdf in course.items %}
-          {% assign rel_path_parts = pdf.path | split: "/" %}
-          {% assign file_name = rel_path_parts | last | remove: ".pdf" %}
-          {% assign tex_path = pdf.path | replace: ".pdf", ".tex" %}
-          {% assign tex_file = note_files | where: "path", tex_path | first %}
-          {% assign pdf_url = pdf.path | uri_escape | replace: "%2F", "/" %}
-          {% assign tex_url = tex_path | uri_escape | replace: "%2F", "/" %}
+  .phd-notes-kicker {
+    display: inline-block;
+    background: var(--phd-accent-soft);
+    color: var(--phd-accent);
+    border: 1px solid #bdeaf2;
+    border-radius: 999px;
+    padding: 0.18rem 0.65rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.55rem;
+  }
 
-          <li>
-            <strong>{{ file_name | replace: "-", " " | replace: "_", " " }}</strong>
-            -
-            <a href="{{ base_path }}{{ pdf_url }}">PDF</a>
-            {% if tex_file %}
-              |
-              <a href="{{ base_path }}{{ tex_url }}">TEX</a>
-            {% else %}
-              | TEX no disponible
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
+  .phd-notes-hero h2 {
+    margin: 0;
+    color: var(--phd-ink);
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+
+  .phd-notes-subtitle {
+    margin: 0.45rem 0 1rem 0;
+    color: var(--phd-muted);
+    font-size: 1.01rem;
+  }
+
+  .phd-notes-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+  }
+
+  .phd-notes-chip {
+    background: #ffffff;
+    border: 1px solid var(--phd-line);
+    border-radius: 999px;
+    padding: 0.2rem 0.7rem;
+    color: var(--phd-ink);
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .phd-notes-guide {
+    background: var(--phd-panel);
+    border: 1px dashed var(--phd-line);
+    border-radius: 12px;
+    padding: 1rem 1.05rem;
+    margin-bottom: 1.4rem;
+    color: #374151;
+  }
+
+  .phd-notes-guide p {
+    margin: 0.35rem 0;
+  }
+
+  .phd-notes-guide code {
+    background: #eef2f7;
+    border: 1px solid #d6dde8;
+    border-radius: 6px;
+    padding: 0.1rem 0.4rem;
+  }
+
+  .phd-semester {
+    margin-bottom: 1.65rem;
+  }
+
+  .phd-semester-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin-bottom: 0.85rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.45rem;
+  }
+
+  .phd-semester-head h3 {
+    margin: 0;
+    color: var(--phd-ink);
+    font-size: 1.4rem;
+  }
+
+  .phd-semester-count {
+    color: var(--phd-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .phd-course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.85rem;
+  }
+
+  .phd-course-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 0.95rem;
+  }
+
+  .phd-course-title {
+    margin: 0 0 0.75rem 0;
+    color: #111827;
+    font-size: 1.06rem;
+  }
+
+  .phd-note-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .phd-note-item {
+    margin: 0;
+    padding: 0.52rem 0;
+    border-top: 1px solid #f0f2f5;
+  }
+
+  .phd-note-item:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .phd-note-name {
+    margin: 0 0 0.35rem 0;
+    color: #1f2937;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .phd-note-links {
+    display: flex;
+    gap: 0.45rem;
+    flex-wrap: wrap;
+  }
+
+  .phd-link-btn,
+  .phd-link-muted {
+    display: inline-block;
+    border-radius: 7px;
+    padding: 0.15rem 0.48rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  .phd-link-btn {
+    color: #0f4f6b;
+    background: #e9f6fd;
+    border: 1px solid #b9e5f8;
+    text-decoration: none;
+  }
+
+  .phd-link-btn:hover {
+    background: #d8eef9;
+    text-decoration: none;
+  }
+
+  .phd-link-muted {
+    color: #8b919b;
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+  }
+</style>
+
+<section class="phd-notes-page">
+  <div class="phd-notes-hero">
+    <span class="phd-notes-kicker">Research Library</span>
+    <h2>PhD Notes</h2>
+    <p class="phd-notes-subtitle">Notas del doctorado con acceso rapido a PDF y fuente LaTeX.</p>
+    <div class="phd-notes-stats">
+      <span class="phd-notes-chip">{{ pdf_files.size }} PDFs</span>
+      <span class="phd-notes-chip">{{ tex_files.size }} TEX files</span>
+    </div>
+  </div>
+
+  <div class="phd-notes-guide">
+    <p>Estructura de carga automatica:</p>
+    <p>
+      <code>files/phd-notes/&lt;semestre&gt;/&lt;materia&gt;/archivo.pdf</code>
+      +
+      <code>files/phd-notes/&lt;semestre&gt;/&lt;materia&gt;/archivo.tex</code>
+    </p>
+    <p>Todo lo que subas en esa ruta aparece automaticamente en esta pagina al deployar.</p>
+  </div>
+
+  {% if pdf_files.size == 0 %}
+    <p>Todavia no hay notas cargadas.</p>
+  {% else %}
+    {% assign semesters = pdf_files | group_by_exp: "item", "item.path | remove_first: notes_root | split: '/' | first" %}
+
+    {% for semester in semesters %}
+      <section class="phd-semester">
+        <div class="phd-semester-head">
+          <h3>{{ semester.name | replace: "-", " " | replace: "_", " " }}</h3>
+          <span class="phd-semester-count">{{ semester.items.size }} notas</span>
+        </div>
+
+        {% assign courses = semester.items | group_by_exp: "item", "item.path | remove_first: notes_root | split: '/' | slice: 1, 1 | first" %}
+        <div class="phd-course-grid">
+          {% for course in courses %}
+            {% assign course_words = course.name | replace: "-", " " | replace: "_", " " | split: " " %}
+            {% capture course_title %}
+              {% for word in course_words %}
+                {% if word != "" %}{{ word | capitalize }}{% unless forloop.last %} {% endunless %}{% endif %}
+              {% endfor %}
+            {% endcapture %}
+
+            <article class="phd-course-card">
+              <h4 class="phd-course-title">{{ course_title | strip }}</h4>
+              <ul class="phd-note-list">
+                {% for pdf in course.items %}
+                  {% assign rel_path_parts = pdf.path | split: "/" %}
+                  {% assign file_name = rel_path_parts | last | remove: ".pdf" %}
+                  {% assign tex_path = pdf.path | replace: ".pdf", ".tex" %}
+                  {% assign tex_file = note_files | where: "path", tex_path | first %}
+                  {% assign pdf_url = pdf.path | uri_escape | replace: "%2F", "/" %}
+                  {% assign tex_url = tex_path | uri_escape | replace: "%2F", "/" %}
+
+                  <li class="phd-note-item">
+                    <p class="phd-note-name">{{ file_name }}</p>
+                    <div class="phd-note-links">
+                      <a class="phd-link-btn" href="{{ base_path }}{{ pdf_url }}">PDF</a>
+                      {% if tex_file %}
+                        <a class="phd-link-btn" href="{{ base_path }}{{ tex_url }}">TEX</a>
+                      {% else %}
+                        <span class="phd-link-muted">TEX pending</span>
+                      {% endif %}
+                    </div>
+                  </li>
+                {% endfor %}
+              </ul>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
     {% endfor %}
-  {% endfor %}
-{% endif %}
+  {% endif %}
+</section>
