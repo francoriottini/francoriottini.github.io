@@ -1,12 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --site-bg-top: #ecf3f7;
+  --site-bg-bottom: #f6f9fc;
+  --site-surface: #ffffff;
+  --site-surface-soft: #f7fbfd;
+  --site-ink: #1d2a3a;
+  --site-muted: #607185;
+  --site-line: #d4dee8;
+  --site-accent: #0f6f89;
+  --site-accent-dark: #0a5266;
+  --site-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+  --site-radius-lg: 16px;
+  --site-radius-md: 12px;
+}
+
+body {
+  font-family: "IBM Plex Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--site-ink);
+  background:
+    radial-gradient(circle at 2% 0%, #d8ebf4 0, rgba(216, 235, 244, 0) 28%),
+    linear-gradient(180deg, var(--site-bg-top) 0, var(--site-bg-bottom) 280px, #f2f5f9 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.page__title,
+.archive__item-title,
+.author__name {
+  font-family: "Fraunces", Georgia, serif;
+  color: var(--site-ink);
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: var(--site-accent);
+}
+
+a:hover,
+a:focus {
+  color: var(--site-accent-dark);
+}
+
+#main {
+  margin-top: 1.35rem;
+}
+
+.page .page__inner-wrap,
+.archive {
+  background: var(--site-surface);
+  border: 1px solid var(--site-line);
+  border-radius: var(--site-radius-lg);
+  box-shadow: var(--site-shadow);
+  padding: 1.15rem 1.35rem 1.25rem;
+}
+
+.page__title {
+  margin-bottom: 0.7rem;
+  font-size: 2rem;
+}
+
+.page__content p,
+.page__content li,
+.archive p,
+.archive li {
+  line-height: 1.72;
+  color: #2a3a4e;
+}
+
+.page__content h2 {
+  border-bottom: 1px solid #dce5ed;
+}
+
+.page__content blockquote {
+  border-left: 4px solid #8abed0;
+  background: #f0f8fc;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(9px);
+  background: rgba(248, 251, 253, 0.92);
+  border-bottom: 1px solid var(--site-line);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
+.masthead__inner-wrap {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.greedy-nav {
+  background: transparent;
+}
+
+.greedy-nav a {
+  margin: 0 0.55rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 9px;
+  font-weight: 600;
+  color: #24364b;
+}
+
+.greedy-nav a:hover {
+  background: #e7f3f8;
+  text-decoration: none;
+}
+
+.greedy-nav .visible-links a:before {
+  height: 2px;
+  background: #1a8fb0;
+}
+
+.greedy-nav button {
+  border-radius: 9px;
+  background-color: var(--site-accent);
+}
+
+.sidebar > div[itemscope] {
+  background: var(--site-surface);
+  border: 1px solid var(--site-line);
+  border-radius: var(--site-radius-lg);
+  box-shadow: var(--site-shadow);
+  padding: 0.95rem;
+}
+
+.author__avatar img {
+  border: 2px solid #d3e7ef;
+  box-shadow: 0 7px 20px rgba(15, 23, 42, 0.11);
+}
+
+.author__bio {
+  color: #516377;
+  line-height: 1.45;
+}
+
+.author__urls a {
+  border-radius: 8px;
+  padding: 0.2rem 0.45rem;
+  margin-bottom: 0.35rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.author__urls a:hover {
+  background: #e9f6fb;
+  text-decoration: none;
+}
+
+.archive .list__item {
+  margin-bottom: 0.95rem;
+}
+
+.archive .archive__item {
+  background: var(--site-surface-soft);
+  border: 1px solid var(--site-line);
+  border-radius: var(--site-radius-md);
+  padding: 0.9rem 1rem;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.archive .archive__item:hover {
+  transform: translateY(-2px);
+  border-color: #b8d3df;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.archive__item-title {
+  margin-top: 0;
+}
+
+.archive__item-title a {
+  text-decoration: none;
+}
+
+.archive__item-title a:hover {
+  text-decoration: underline;
+}
+
 .archive__item-excerpt {
   text-align: justify;
+}
+
+.page__meta {
+  color: #77869a;
+}
+
+.btn,
+button,
+input[type="submit"] {
+  border-radius: 10px;
+}
+
+.btn--inverse {
+  background: var(--site-accent);
+  border-color: var(--site-accent);
+  color: #fff;
+}
+
+.btn--inverse:hover {
+  background: var(--site-accent-dark);
+}
+
+.page__footer {
+  background: #e6edf3;
+  border-top: 1px solid #ccd8e4;
+}
+
+.page__footer .fas,
+.page__footer .fab,
+.page__footer .far,
+.page__footer .fal {
+  color: #5f748b;
+}
+
+.page__footer-follow a:hover {
+  color: var(--site-accent-dark);
 }
 
 .post-header-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0.5em; /* Opcional: separa un poco los posts */
+  margin-bottom: 0.5em;
 }
 
 .post-header-flex .archive__item-title {
@@ -15,6 +238,230 @@
 
 .post-header-flex .page__meta {
   font-size: 1em;
-  color: #aaa;
+  color: #8b98a8;
   white-space: nowrap;
+}
+
+.phd-notes-page {
+  --phd-ink: #1f2937;
+  --phd-muted: #65748b;
+  --phd-line: #ccd8e4;
+  --phd-panel: #f3f8fb;
+  --phd-accent: #0f7089;
+  --phd-accent-soft: #e1f2f8;
+  margin-top: 0.4rem;
+}
+
+.phd-notes-hero {
+  background: linear-gradient(140deg, #f8fcfe 0%, #ecf6fb 100%);
+  border: 1px solid var(--phd-line);
+  border-radius: 14px;
+  padding: 1.2rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.phd-notes-kicker {
+  display: inline-block;
+  background: var(--phd-accent-soft);
+  color: var(--phd-accent);
+  border: 1px solid #badbe7;
+  border-radius: 999px;
+  padding: 0.18rem 0.62rem;
+  font-size: 0.76rem;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.phd-notes-hero h2 {
+  margin: 0.45rem 0 0 0;
+  color: var(--phd-ink);
+  font-size: 1.8rem;
+}
+
+.phd-notes-subtitle {
+  margin: 0.55rem 0 0.9rem 0;
+  color: var(--phd-muted);
+}
+
+.phd-notes-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.phd-notes-chip {
+  background: #fff;
+  border: 1px solid var(--phd-line);
+  border-radius: 999px;
+  padding: 0.2rem 0.72rem;
+  color: #274055;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.phd-notes-help {
+  margin-left: auto;
+  color: #516070;
+}
+
+.phd-notes-help summary {
+  cursor: pointer;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #345267;
+}
+
+.phd-notes-help summary:hover {
+  color: var(--phd-accent);
+}
+
+.phd-notes-help-content {
+  margin-top: 0.45rem;
+  border: 1px dashed #bfd0dd;
+  border-radius: 10px;
+  background: #f8fbfd;
+  padding: 0.5rem 0.65rem;
+  font-size: 0.86rem;
+}
+
+.phd-notes-help-content code {
+  background: #eaf1f7;
+  border: 1px solid #d1dde8;
+  border-radius: 6px;
+  padding: 0.1rem 0.35rem;
+}
+
+.phd-semester {
+  margin-bottom: 1.7rem;
+}
+
+.phd-semester-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.55rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #d9e3ec;
+  padding-bottom: 0.4rem;
+}
+
+.phd-semester-head h3 {
+  margin: 0;
+  color: var(--phd-ink);
+  font-size: 1.45rem;
+}
+
+.phd-semester-count {
+  color: var(--phd-muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.phd-course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.8rem;
+}
+
+.phd-course-card {
+  background: #fbfdff;
+  border: 1px solid #d7e2eb;
+  border-radius: 12px;
+  padding: 0.9rem;
+}
+
+.phd-course-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin-bottom: 0.7rem;
+}
+
+.phd-course-title {
+  margin: 0;
+  color: #142132;
+  font-size: 1.15rem;
+}
+
+.phd-course-count {
+  color: #5f6f82;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.phd-note-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.phd-note-item {
+  margin: 0;
+  padding: 0.5rem 0;
+  border-top: 1px solid #e3ebf1;
+}
+
+.phd-note-item:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.phd-note-name {
+  margin: 0 0 0.35rem 0;
+  color: #263347;
+  font-weight: 700;
+  line-height: 1.34;
+}
+
+.phd-note-links {
+  display: flex;
+  gap: 0.42rem;
+  flex-wrap: wrap;
+}
+
+.phd-link-btn,
+.phd-link-muted {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0.13rem 0.48rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.phd-link-btn {
+  color: #0e4c64;
+  background: #e0f1f9;
+  border: 1px solid #abd4e5;
+  text-decoration: none;
+}
+
+.phd-link-btn:hover {
+  background: #cde8f5;
+  text-decoration: none;
+}
+
+.phd-link-muted {
+  color: #818b97;
+  background: #eef2f6;
+  border: 1px solid #d6dde5;
+}
+
+@media (max-width: 900px) {
+  .page .page__inner-wrap,
+  .archive {
+    padding: 0.95rem 1rem 1rem;
+    border-radius: 14px;
+  }
+
+  .phd-notes-help {
+    margin-left: 0;
+    width: 100%;
+  }
 }
