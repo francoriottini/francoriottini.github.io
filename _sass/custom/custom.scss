@@ -144,10 +144,25 @@ a:focus {
 }
 
 .author__urls a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
   border-radius: 8px;
   padding: 0.2rem 0.45rem;
   margin-bottom: 0.35rem;
+  line-height: 1.35;
   transition: background-color 0.2s ease-in-out;
+}
+
+.author__urls li {
+  white-space: normal;
+}
+
+.author__urls .fa,
+.author__urls .fab,
+.author__urls .fas {
+  width: 1.1rem;
+  text-align: center;
 }
 
 .author__urls a:hover {
@@ -246,9 +261,6 @@ input[type="submit"] {
   --phd-ink: #1f2937;
   --phd-muted: #65748b;
   --phd-line: #ccd8e4;
-  --phd-panel: #f3f8fb;
-  --phd-accent: #0f7089;
-  --phd-accent-soft: #e1f2f8;
   margin-top: 0.4rem;
 }
 
@@ -260,21 +272,8 @@ input[type="submit"] {
   margin-bottom: 1rem;
 }
 
-.phd-notes-kicker {
-  display: inline-block;
-  background: var(--phd-accent-soft);
-  color: var(--phd-accent);
-  border: 1px solid #badbe7;
-  border-radius: 999px;
-  padding: 0.18rem 0.62rem;
-  font-size: 0.76rem;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
 .phd-notes-hero h2 {
-  margin: 0.45rem 0 0 0;
+  margin: 0;
   color: var(--phd-ink);
   font-size: 1.8rem;
 }
@@ -299,38 +298,6 @@ input[type="submit"] {
   color: #274055;
   font-size: 0.84rem;
   font-weight: 700;
-}
-
-.phd-notes-help {
-  margin-left: auto;
-  color: #516070;
-}
-
-.phd-notes-help summary {
-  cursor: pointer;
-  font-size: 0.84rem;
-  font-weight: 700;
-  color: #345267;
-}
-
-.phd-notes-help summary:hover {
-  color: var(--phd-accent);
-}
-
-.phd-notes-help-content {
-  margin-top: 0.45rem;
-  border: 1px dashed #bfd0dd;
-  border-radius: 10px;
-  background: #f8fbfd;
-  padding: 0.5rem 0.65rem;
-  font-size: 0.86rem;
-}
-
-.phd-notes-help-content code {
-  background: #eaf1f7;
-  border: 1px solid #d1dde8;
-  border-radius: 6px;
-  padding: 0.1rem 0.35rem;
 }
 
 .phd-semester {
@@ -424,8 +391,7 @@ input[type="submit"] {
   flex-wrap: wrap;
 }
 
-.phd-link-btn,
-.phd-link-muted {
+.phd-link-btn {
   display: inline-block;
   border-radius: 8px;
   padding: 0.13rem 0.48rem;
@@ -447,21 +413,10 @@ input[type="submit"] {
   text-decoration: none;
 }
 
-.phd-link-muted {
-  color: #818b97;
-  background: #eef2f6;
-  border: 1px solid #d6dde5;
-}
-
 @media (max-width: 900px) {
   .page .page__inner-wrap,
   .archive {
     padding: 0.95rem 1rem 1rem;
     border-radius: 14px;
-  }
-
-  .phd-notes-help {
-    margin-left: 0;
-    width: 100%;
   }
 }

@@ -14,20 +14,13 @@ author_profile: true
 
 <section class="phd-notes-page">
   <header class="phd-notes-hero">
-    <span class="phd-notes-kicker">Research Library</span>
     <h2>PhD Notes</h2>
     <p class="phd-notes-subtitle">Notas del doctorado ordenadas por semestre y materia.</p>
     <div class="phd-notes-meta">
       <span class="phd-notes-chip">{{ pdf_files.size }} PDFs</span>
-      <span class="phd-notes-chip">{{ tex_files.size }} TEX files</span>
-      <details class="phd-notes-help">
-        <summary>Como agregar nuevos archivos</summary>
-        <div class="phd-notes-help-content">
-          <code>files/phd-notes/&lt;semestre&gt;/&lt;materia&gt;/archivo.pdf</code>
-          +
-          <code>files/phd-notes/&lt;semestre&gt;/&lt;materia&gt;/archivo.tex</code>
-        </div>
-      </details>
+      {% if tex_files.size > 0 %}
+        <span class="phd-notes-chip">{{ tex_files.size }} TEX files</span>
+      {% endif %}
     </div>
   </header>
 
@@ -73,8 +66,6 @@ author_profile: true
                       <a class="phd-link-btn" href="{{ base_path }}{{ pdf_url }}">PDF</a>
                       {% if tex_file %}
                         <a class="phd-link-btn" href="{{ base_path }}{{ tex_url }}">TEX</a>
-                      {% else %}
-                        <span class="phd-link-muted">TEX pending</span>
                       {% endif %}
                     </div>
                   </li>
