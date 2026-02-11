@@ -1,0 +1,60 @@
+---
+layout: archive
+title: "PhD Notes"
+permalink: /phd-notes/
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="archive-intro" style="margin-bottom: 2em; font-size: 1em; line-height: 1.6;">
+  <p>Notas del doctorado (PDF + fuente LaTeX).</p>
+  <p>
+    Estructura recomendada para carga automatica:
+    <code>files/phd-notes/&lt;semestre&gt;/&lt;materia&gt;/archivo.pdf</code>
+    y
+    <code>files/phd-notes/&lt;semestre&gt;/&lt;materia&gt;/archivo.tex</code>.
+  </p>
+  <p>Al agregar archivos en esa ruta, apareceran automaticamente en esta pagina al reconstruir/deployar el sitio.</p>
+</div>
+
+{% assign notes_root = "/files/phd-notes/" %}
+{% assign note_files = site.static_files | where_exp: "f", "f.path contains notes_root" | sort: "path" %}
+{% assign pdf_files = note_files | where_exp: "f", "f.extname == '.pdf'" %}
+
+{% if pdf_files.size == 0 %}
+  <p>Todavia no hay notas cargadas.</p>
+{% else %}
+  {% assign semesters = pdf_files | group_by_exp: "item", "item.path | remove_first: notes_root | split: '/' | first" %}
+
+  {% for semester in semesters %}
+    <h2>{{ semester.name | replace: "-", " " | replace: "_", " " }}</h2>
+
+    {% assign courses = semester.items | group_by_exp: "item", "item.path | remove_first: notes_root | split: '/' | slice: 1, 1 | first" %}
+    {% for course in courses %}
+      <h3>{{ course.name | replace: "-", " " | replace: "_", " " }}</h3>
+      <ul>
+        {% for pdf in course.items %}
+          {% assign rel_path_parts = pdf.path | split: "/" %}
+          {% assign file_name = rel_path_parts | last | remove: ".pdf" %}
+          {% assign tex_path = pdf.path | replace: ".pdf", ".tex" %}
+          {% assign tex_file = note_files | where: "path", tex_path | first %}
+          {% assign pdf_url = pdf.path | uri_escape | replace: "%2F", "/" %}
+          {% assign tex_url = tex_path | uri_escape | replace: "%2F", "/" %}
+
+          <li>
+            <strong>{{ file_name | replace: "-", " " | replace: "_", " " }}</strong>
+            -
+            <a href="{{ base_path }}{{ pdf_url }}">PDF</a>
+            {% if tex_file %}
+              |
+              <a href="{{ base_path }}{{ tex_url }}">TEX</a>
+            {% else %}
+              | TEX no disponible
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  {% endfor %}
+{% endif %}
