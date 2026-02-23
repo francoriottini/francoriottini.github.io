@@ -1,0 +1,62 @@
+# Franco Riottini Depetris
+
+> Personal academic website of Franco Riottini Depetris (Economics PhD student at the University of Michigan). Main topics: international economics, trade, firm dynamics, productivity, education, and applied machine learning/LLMs in economics. Blog content is mostly in Spanish.
+
+Use canonical website URLs for user-facing navigation. For model ingestion and parsing, prefer the raw Markdown sources listed below.
+
+This file intentionally includes only publicly shareable resources and excludes confidential/unpublished materials.
+
+Last updated: 2026-02-23
+
+## Main
+
+- [Bio / Home](https://francoriottini.github.io/): Main profile, research interests, background, and contact information.
+- [CV](https://francoriottini.github.io/cv/): Academic background, experience, skills, and CV download links.
+- [Publications](https://francoriottini.github.io/publications/): Publications and work-in-progress research.
+- [Teaching](https://francoriottini.github.io/teaching/): Teaching history and course roles.
+- [PhD Notes](https://francoriottini.github.io/phd-notes/): Organized course notes (PDF/TEX) by semester and subject.
+- [Blog](https://francoriottini.github.io/blog/): Essays and posts, mainly in Spanish.
+
+## Key Research Items
+
+- [Do Ambassadors Matter? The effect of ambassadors on trade promotion](https://francoriottini.github.io/publication/2024-02-01-Do-Ambassadors-Matter): Master thesis (trade promotion and economic diplomacy).
+- [Automatic Product Classification in International Trade: Machine Learning and Large Language Models](https://francoriottini.github.io/publication/2024-08-30-Automatic-Product-Classification-in-International-Trade): Journal/research article on ML/LLM classification in trade.
+- [The Value of Organic Certifications](https://francoriottini.github.io/publication/2024-04-28-WIP): Work in progress on certification effects in agricultural exports.
+
+## Key Blog Posts
+
+- [An Incomplete Tought About Justice](https://francoriottini.github.io/posts/2025/03/Tought-About-Justice/): Reflection on justice and Rawlsian ideas.
+- [Nativos de IA](https://francoriottini.github.io/posts/2025/06/AI-native/): Essay on AI-native generations and labor market adaptation.
+
+## Files and Documents
+
+- [CV PDF (English)](https://francoriottini.github.io/files/CV_Riottini_Franco_English.pdf)
+- [Master Thesis PDF](https://francoriottini.github.io/files/Riottini%20Depetris%20%282024%29.pdf)
+- [Trade Classification Paper PDF](https://francoriottini.github.io/files/Marra%2C%20Riottini%2C%20Volpe%20%282023%29.pdf)
+
+## Markdown Sources (Preferred for LLM Parsing)
+
+- [Home source](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_pages/about.md)
+- [CV source](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_pages/cv.md)
+- [Publications index source](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_pages/publications.md)
+- [Teaching index source](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_pages/teaching.html)
+- [PhD Notes page source](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_pages/phd-notes.html)
+- [Blog index source](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_pages/blog.html)
+- [Publication source: Do Ambassadors Matter?](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_publications/2024-02-01-Do-Ambassadors-Matter.md)
+- [Publication source: Automatic Product Classification](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_publications/2023-07-15-Automatic-Product-Classification-in-International-Trade.md)
+- [Publication source: The Value of Organic Certifications](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_publications/2024-04-28-WIP.md)
+- [Blog post source: An Incomplete Tought About Justice](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_posts/2025-03-01-An-Incomplete-Tought-About-Justice.md)
+- [Blog post source: Nativos de IA](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_posts/2025-05-31-AI-native.md)
+- [Teaching item source: Lecturer - Economics I](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_teaching/2025-autumn-teaching-9.md)
+
+## Optional
+
+- [Sitemap XML](https://francoriottini.github.io/sitemap.xml): Complete crawlable URL list.
+- [RSS/Atom Feed](https://francoriottini.github.io/feed.xml): Recent posts feed.
+- [Posts by category](https://francoriottini.github.io/categories/)
+- [Posts by tag](https://francoriottini.github.io/tags/)
+- [Talks and presentations](https://francoriottini.github.io/talks/)
+- [Talk map](https://francoriottini.github.io/talkmap.html)
+- [Portfolio](https://francoriottini.github.io/portfolio/)
+- [Terms and Privacy](https://francoriottini.github.io/terms/)
+- [Repository](https://github.com/francoriottini/francoriottini.github.io)
