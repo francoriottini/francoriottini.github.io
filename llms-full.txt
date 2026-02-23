@@ -1,0 +1,92 @@
+# Franco Riottini Depetris
+
+> Expanded LLM context file for the public website of Franco Riottini Depetris (Economics PhD student at the University of Michigan). This file is intended for inference-time assistance and includes only publicly shareable content.
+
+Scope and privacy policy for this file:
+- Include only public website content and public documents.
+- Exclude confidential drafts, private files, and unpublished materials.
+- Prefer canonical website URLs for user-facing answers.
+
+Last updated: 2026-02-23
+
+## Canonical URLs
+
+- [Home / Bio](https://francoriottini.github.io/)
+- [CV](https://francoriottini.github.io/cv/)
+- [Publications](https://francoriottini.github.io/publications/)
+- [Teaching](https://francoriottini.github.io/teaching/)
+- [PhD Notes](https://francoriottini.github.io/phd-notes/)
+- [Blog](https://francoriottini.github.io/blog/)
+
+## Profile Summary
+
+Franco Riottini Depetris is a PhD student in Economics at the University of Michigan (started August 2025). He previously completed an MA in Economics at Universidad de San Andres (UdeSA), where he also worked as a pre-doctoral assistant. His main research interests include international economics, firm dynamics and productivity, health, and education, with applied machine learning and LLM methods.
+
+Previously, he worked as a consultant for the Inter-American Development Bank and the World Bank, and as an economic analyst at the Center for Studies of the Santa Fe Chamber of Commerce.
+
+## Contact and Profiles
+
+- Email: friottinidepetris@udesa.edu.ar
+- Email: friodep@umich.edu
+- Google Scholar: https://scholar.google.com/citations?hl=es&user=kApGnjIAAAAJ
+- GitHub: https://github.com/francoriottini
+- LinkedIn: https://www.linkedin.com/in/franco-riottini-610a0b189/
+- X/Twitter: https://x.com/francoriottini
+
+## Public Research Outputs
+
+- [Do Ambassadors Matter? The effect of ambassadors on trade promotion](https://francoriottini.github.io/publication/2024-02-01-Do-Ambassadors-Matter)
+  This master thesis studies the causal impact of ambassadors on trade promotion, using the 2012 Paraguayan political crisis as a natural experiment. The analysis reports reductions in suppliers and imported products after ambassador withdrawal.
+- [Automatic Product Classification in International Trade: Machine Learning and Large Language Models](https://francoriottini.github.io/publication/2024-08-30-Automatic-Product-Classification-in-International-Trade)
+  This paper compares ML and LLM approaches for product classification from text descriptions in trade datasets. It highlights stronger cross-dataset generalization for leading LLMs.
+- [The Value of Organic Certifications](https://francoriottini.github.io/publication/2024-04-28-WIP)
+  Work in progress on the export effects of USDA organic certifications for firms in Latin America, including within-firm and across-firm spillovers.
+
+## Public Blog Content
+
+- [An Incomplete Tought About Justice](https://francoriottini.github.io/posts/2025/03/Tought-About-Justice/)
+  Spanish-language reflection on justice, Rawls, and fairness in social and interpersonal contexts.
+- [Nativos de IA](https://francoriottini.github.io/posts/2025/06/AI-native/)
+  Spanish-language essay on AI-native generations, expected labor market skills, and adaptation strategies for digital natives.
+
+## Teaching Summary
+
+Teaching roles are listed at [Teaching](https://francoriottini.github.io/teaching/), including:
+- Lecturer: Economics I (UdeSA).
+- Teaching Assistant roles in International Economics, International Quantitative Macroeconomics, Economics I, Mathematics I, History of Economic Thought, Introduction to Economics, Introduction to Social Sciences, and Macroeconomics.
+
+## PhD Notes
+
+The [PhD Notes](https://francoriottini.github.io/phd-notes/) page provides semester/course-organized notes with downloadable PDF (and some TEX) files from `files/phd-notes/`.
+
+## Public Downloadable Documents
+
+- [CV PDF (English)](https://francoriottini.github.io/files/CV_Riottini_Franco_English.pdf)
+- [Master Thesis PDF](https://francoriottini.github.io/files/Riottini%20Depetris%20%282024%29.pdf)
+- [Trade Classification Paper PDF](https://francoriottini.github.io/files/Marra%2C%20Riottini%2C%20Volpe%20%282023%29.pdf)
+
+## Raw Markdown Sources
+
+- [Home source](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_pages/about.md)
+- [CV source](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_pages/cv.md)
+- [Publications index source](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_pages/publications.md)
+- [Teaching index source](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_pages/teaching.html)
+- [PhD Notes page source](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_pages/phd-notes.html)
+- [Blog index source](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_pages/blog.html)
+- [Publication source: Do Ambassadors Matter?](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_publications/2024-02-01-Do-Ambassadors-Matter.md)
+- [Publication source: Automatic Product Classification](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_publications/2023-07-15-Automatic-Product-Classification-in-International-Trade.md)
+- [Publication source: The Value of Organic Certifications](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_publications/2024-04-28-WIP.md)
+- [Blog post source: An Incomplete Tought About Justice](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_posts/2025-03-01-An-Incomplete-Tought-About-Justice.md)
+- [Blog post source: Nativos de IA](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_posts/2025-05-31-AI-native.md)
+
+## Optional
+
+- [Sitemap XML](https://francoriottini.github.io/sitemap.xml)
+- [RSS/Atom Feed](https://francoriottini.github.io/feed.xml)
+- [Posts by category](https://francoriottini.github.io/categories/)
+- [Posts by tag](https://francoriottini.github.io/tags/)
+- [Talks and presentations](https://francoriottini.github.io/talks/)
+- [Talk map](https://francoriottini.github.io/talkmap.html)
+- [Portfolio](https://francoriottini.github.io/portfolio/)
+- [Terms and Privacy](https://francoriottini.github.io/terms/)
+- [Repository](https://github.com/francoriottini/francoriottini.github.io)
