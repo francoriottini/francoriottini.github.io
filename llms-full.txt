@@ -44,7 +44,7 @@ Previously, he worked as a consultant for the Inter-American Development Bank an
 
 ## Public Blog Content
 
-- [An Incomplete Tought About Justice](https://francoriottini.github.io/posts/2025/03/Tought-About-Justice/)
+- [An Incomplete Thought About Justice](https://francoriottini.github.io/posts/2025/03/Thought-About-Justice/)
   Spanish-language reflection on justice, Rawls, and fairness in social and interpersonal contexts.
 - [Nativos de IA](https://francoriottini.github.io/posts/2025/06/AI-native/)
   Spanish-language essay on AI-native generations, expected labor market skills, and adaptation strategies for digital natives.
@@ -76,7 +76,7 @@ The [PhD Notes](https://francoriottini.github.io/phd-notes/) page provides semes
 - [Publication source: Do Ambassadors Matter?](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_publications/2024-02-01-Do-Ambassadors-Matter.md)
 - [Publication source: Automatic Product Classification](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_publications/2023-07-15-Automatic-Product-Classification-in-International-Trade.md)
 - [Publication source: The Value of Organic Certifications](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_publications/2024-04-28-WIP.md)
-- [Blog post source: An Incomplete Tought About Justice](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_posts/2025-03-01-An-Incomplete-Tought-About-Justice.md)
+- [Blog post source: An Incomplete Thought About Justice](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_posts/2025-03-01-An-Incomplete-Thought-About-Justice.md)
 - [Blog post source: Nativos de IA](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_posts/2025-05-31-AI-native.md)
 
 ## Optional

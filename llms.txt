@@ -25,7 +25,7 @@ Last updated: 2026-02-23
 
 ## Key Blog Posts
 
-- [An Incomplete Tought About Justice](https://francoriottini.github.io/posts/2025/03/Tought-About-Justice/): Reflection on justice and Rawlsian ideas.
+- [An Incomplete Thought About Justice](https://francoriottini.github.io/posts/2025/03/Thought-About-Justice/): Reflection on justice and Rawlsian ideas.
 - [Nativos de IA](https://francoriottini.github.io/posts/2025/06/AI-native/): Essay on AI-native generations and labor market adaptation.
 
 ## Files and Documents
@@ -45,7 +45,7 @@ Last updated: 2026-02-23
 - [Publication source: Do Ambassadors Matter?](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_publications/2024-02-01-Do-Ambassadors-Matter.md)
 - [Publication source: Automatic Product Classification](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_publications/2023-07-15-Automatic-Product-Classification-in-International-Trade.md)
 - [Publication source: The Value of Organic Certifications](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_publications/2024-04-28-WIP.md)
-- [Blog post source: An Incomplete Tought About Justice](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_posts/2025-03-01-An-Incomplete-Tought-About-Justice.md)
+- [Blog post source: An Incomplete Thought About Justice](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_posts/2025-03-01-An-Incomplete-Thought-About-Justice.md)
 - [Blog post source: Nativos de IA](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_posts/2025-05-31-AI-native.md)
 - [Teaching item source: Lecturer - Economics I](https://raw.githubusercontent.com/francoriottini/francoriottini.github.io/master/_teaching/2025-autumn-teaching-9.md)
 
