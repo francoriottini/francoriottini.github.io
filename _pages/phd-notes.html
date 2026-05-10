@@ -29,10 +29,21 @@ author_profile: true
   {% else %}
     {% assign semesters = pdf_files | group_by_exp: "item", "item.path | remove_first: notes_root | split: '/' | first" %}
 
-    {% for semester in semesters %}
+    {% for semester in semesters reversed %}
+      {% assign semester_parts = semester.name | split: "-" %}
+      {% assign semester_year = semester_parts | first | plus: 0 %}
+      {% assign academic_start_year = semester_year | minus: 1 %}
+      {% assign semester_term = semester_parts | last | replace: "_", " " %}
+
       <section class="phd-semester">
         <div class="phd-semester-head">
-          <h3>{{ semester.name | replace: "-", " " | replace: "_", " " }}</h3>
+          <h3>
+            {% if semester_parts.size > 1 and semester_year > 0 %}
+              {{ academic_start_year }}/{{ semester_year }} {{ semester_term }}
+            {% else %}
+              {{ semester.name | replace: "-", " " | replace: "_", " " }}
+            {% endif %}
+          </h3>
           <span class="phd-semester-count">{{ semester.items.size }} notas</span>
         </div>
 
