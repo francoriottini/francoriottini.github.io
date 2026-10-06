@@ -1,0 +1,63 @@
+courses:
+  - folder: micro
+    title: Microeconomía
+  - folder: macro
+    title: Macroeconomía
+  - folder: econometria
+    title: Econometría
+  - folder: matematica
+    title: Matemática
+
+# Display order and labels. PDFs without an entry still appear under their filename.
+notes:
+  - file: Micro CT.pdf
+    title: Consumer Theory
+    detail: ECON 601 · Bloque 1
+  - file: Micro GE.pdf
+    title: General Equilibrium
+    detail: ECON 603 · Bloque 2
+  - file: Micro GT1.pdf
+    title: Game Theory I
+    detail: ECON 602 · Bloque 3
+  - file: Micro GT2.pdf
+    title: Game Theory II
+    detail: ECON 604 · Bloque 4
+  - file: Notes on Edgeworth Box.pdf
+    title: Edgeworth Box
+    detail: Nota complementaria
+  - file: Notes on KKT Conditions.pdf
+    title: KKT Conditions
+    detail: Nota complementaria
+  - file: Macro main part 1.pdf
+    title: Macroeconomics I
+    detail: ECON 605 · Bloque 1
+  - file: Macro S2.pdf
+    title: Macroeconomics II
+    detail: ECON 607 · Bloque 2
+  - file: Notes on IRTS.pdf
+    title: Increasing Returns to Scale
+    detail: Nota complementaria · IRTS
+  - file: Metrics Statistics (part 1).pdf
+    title: Statistics
+    detail: Parte 1
+  - file: Metrics More on Statistics (part 2).pdf
+    title: More on Statistics
+    detail: Parte 2
+  - file: Math Week 1.pdf
+    title: Semana 1
+  - file: Math Week 2.pdf
+    title: Semana 2
+  - file: Math Week 3.pdf
+    title: Semana 3
+  - file: Math Week 4.pdf
+    title: Semana 4
+  - file: Math Week 5.pdf
+    title: Semana 5
+  - file: Math Week 6.pdf
+    title: Semana 6
+  - file: Math Week 7.pdf
+    title: Semana 7
+  - file: Math Week 8.pdf
+    title: Semana 8
+  - file: Math Week 9.pdf
+    title: Semana 9
