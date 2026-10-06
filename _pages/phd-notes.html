@@ -6,85 +6,111 @@ author_profile: true
 ---
 
 {% include base_path %}
-
 {% assign notes_root = "/files/phd-notes/" %}
 {% assign note_files = site.static_files | where_exp: "f", "f.path contains notes_root" | sort: "path" %}
 {% assign pdf_files = note_files | where_exp: "f", "f.extname == '.pdf'" %}
-{% assign tex_files = note_files | where_exp: "f", "f.extname == '.tex'" %}
+{% assign semesters = pdf_files | group_by_exp: "item", "item.path | remove_first: notes_root | split: '/' | first" %}
+{% assign course_keys = site.data.phd_notes.courses | map: "folder" %}
+{% assign named_files = site.data.phd_notes.notes | map: "file" %}
 
-<section class="phd-notes-page">
-  <header class="phd-notes-hero">
-    <h2>PhD Notes</h2>
-    <p class="phd-notes-subtitle">Notas del doctorado ordenadas por semestre y materia.</p>
-    <div class="phd-notes-meta">
-      <span class="phd-notes-chip">{{ pdf_files.size }} PDFs</span>
-      {% if tex_files.size > 0 %}
-        <span class="phd-notes-chip">{{ tex_files.size }} TEX files</span>
-      {% endif %}
-    </div>
-  </header>
+<section class="phd-notes-page" aria-label="Notas del doctorado">
+  <div class="phd-notes-intro">
+    <p>Notas del doctorado, organizadas por semestre y materia.</p>
+    <span>{{ pdf_files.size }} notas · {{ semesters.size }} semestres</span>
+  </div>
 
   {% if pdf_files.size == 0 %}
-    <p>Todavia no hay notas cargadas.</p>
+    <p>Todavía no hay notas cargadas.</p>
   {% else %}
-    {% assign semesters = pdf_files | group_by_exp: "item", "item.path | remove_first: notes_root | split: '/' | first" %}
+    <nav class="phd-notes-index" aria-label="Índice de materias">
+      <p class="phd-index-label">Ir a una materia</p>
+      <div class="phd-index-grid">
+        {% for semester in semesters reversed %}
+          {% assign available_courses = semester.items | group_by_exp: "item", "item.path | remove_first: notes_root | split: '/' | slice: 1, 1 | first" %}
+          <div class="phd-index-semester">
+            <a class="phd-index-term" href="#semester-{{ semester.name | slugify }}">{% include phd-semester-title.html name=semester.name %}</a>
+            <ul>
+              {% for definition in site.data.phd_notes.courses %}
+                {% assign course = available_courses | where: "name", definition.folder | first %}
+                {% if course %}
+                  <li><a href="#course-{{ semester.name | slugify }}-{{ course.name | slugify }}">{{ definition.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+              {% for course in available_courses %}
+                {% unless course_keys contains course.name %}
+                  <li><a href="#course-{{ semester.name | slugify }}-{{ course.name | slugify }}">{{ course.name | replace: "-", " " | replace: "_", " " | capitalize }}</a></li>
+                {% endunless %}
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    </nav>
 
     {% for semester in semesters reversed %}
-      {% assign semester_parts = semester.name | split: "-" %}
-      {% assign semester_year = semester_parts | first | plus: 0 %}
-      {% assign academic_start_year = semester_year | minus: 1 %}
-      {% assign semester_term = semester_parts | last | replace: "_", " " %}
-
-      <section class="phd-semester">
+      <section class="phd-semester" id="semester-{{ semester.name | slugify }}" aria-labelledby="title-{{ semester.name | slugify }}">
         <div class="phd-semester-head">
-          <h3>
-            {% if semester_parts.size > 1 and semester_year > 0 %}
-              {{ academic_start_year }}/{{ semester_year }} {{ semester_term }}
-            {% else %}
-              {{ semester.name | replace: "-", " " | replace: "_", " " }}
-            {% endif %}
-          </h3>
-          <span class="phd-semester-count">{{ semester.items.size }} notas</span>
+          <h2 id="title-{{ semester.name | slugify }}">{% include phd-semester-title.html name=semester.name %}</h2>
+          <span>{{ semester.items.size }} notas</span>
         </div>
-
         {% assign courses = semester.items | group_by_exp: "item", "item.path | remove_first: notes_root | split: '/' | slice: 1, 1 | first" %}
-        <div class="phd-course-grid">
-          {% for course in courses %}
-            {% assign course_words = course.name | replace: "-", " " | replace: "_", " " | split: " " %}
-            {% capture course_title %}
-              {% for word in course_words %}
-                {% if word != "" %}{{ word | capitalize }}{% unless forloop.last %} {% endunless %}{% endif %}
-              {% endfor %}
-            {% endcapture %}
+        {% assign ordered_courses = "" | split: "," %}
+        {% for definition in site.data.phd_notes.courses %}
+          {% assign matching_courses = courses | where: "name", definition.folder %}
+          {% assign ordered_courses = ordered_courses | concat: matching_courses %}
+        {% endfor %}
+        {% for course in courses %}
+          {% unless course_keys contains course.name %}
+            {% assign matching_courses = courses | where: "name", course.name %}
+            {% assign ordered_courses = ordered_courses | concat: matching_courses %}
+          {% endunless %}
+        {% endfor %}
 
-            <article class="phd-course-card">
-              <div class="phd-course-head">
-                <h4 class="phd-course-title">{{ course_title | strip }}</h4>
-                <span class="phd-course-count">{{ course.items.size }} notas</span>
-              </div>
-              <ul class="phd-note-list">
-                {% for pdf in course.items %}
-                  {% assign rel_path_parts = pdf.path | split: "/" %}
-                  {% assign file_name = rel_path_parts | last | remove: ".pdf" %}
-                  {% assign tex_path = pdf.path | replace: ".pdf", ".tex" %}
-                  {% assign tex_file = note_files | where: "path", tex_path | first %}
-                  {% assign pdf_url = pdf.path | uri_escape | replace: "%2F", "/" %}
-                  {% assign tex_url = tex_path | uri_escape | replace: "%2F", "/" %}
-
-                  <li class="phd-note-item">
-                    <p class="phd-note-name">{{ file_name }}</p>
-                    <div class="phd-note-links">
-                      <a class="phd-link-btn" href="{{ base_path }}{{ pdf_url }}">PDF</a>
-                      {% if tex_file %}
-                        <a class="phd-link-btn" href="{{ base_path }}{{ tex_url }}">TEX</a>
-                      {% endif %}
-                    </div>
-                  </li>
-                {% endfor %}
-              </ul>
-            </article>
+        {% for course in ordered_courses %}
+          {% assign definition = site.data.phd_notes.courses | where: "folder", course.name | first %}
+          {% assign fallback_title = course.name | replace: "-", " " | replace: "_", " " | capitalize %}
+          {% assign course_title = definition.title | default: fallback_title %}
+          {% assign ordered_files = "" | split: "," %}
+          {% for note in site.data.phd_notes.notes %}
+            {% assign matching_files = course.items | where: "name", note.file %}
+            {% assign ordered_files = ordered_files | concat: matching_files %}
           {% endfor %}
-        </div>
+          {% for pdf in course.items %}
+            {% unless named_files contains pdf.name %}
+              {% assign matching_files = course.items | where: "path", pdf.path %}
+              {% assign ordered_files = ordered_files | concat: matching_files %}
+            {% endunless %}
+          {% endfor %}
+
+          <article class="phd-course" id="course-{{ semester.name | slugify }}-{{ course.name | slugify }}" aria-labelledby="course-title-{{ semester.name | slugify }}-{{ course.name | slugify }}">
+            <div class="phd-course-head">
+              <h3 id="course-title-{{ semester.name | slugify }}-{{ course.name | slugify }}">{{ course_title }}</h3>
+              <span>{{ course.items.size }} {% if course.items.size == 1 %}nota{% else %}notas{% endif %}</span>
+            </div>
+            <ul class="phd-note-list{% if course.name == 'matematica' %} phd-note-list--weeks{% endif %}">
+              {% for pdf in ordered_files %}
+                {% assign note = site.data.phd_notes.notes | where: "file", pdf.name | first %}
+                {% assign fallback_name = pdf.name | remove: ".pdf" %}
+                {% assign note_title = note.title | default: fallback_name %}
+                {% assign tex_path = pdf.path | replace: ".pdf", ".tex" %}
+                {% assign tex_file = note_files | where: "path", tex_path | first %}
+                {% assign pdf_url = pdf.path | uri_escape | replace: "%2F", "/" %}
+                {% assign tex_url = tex_path | uri_escape | replace: "%2F", "/" %}
+                <li class="phd-note-item">
+                  <a class="phd-note-link" href="{{ base_path }}{{ pdf_url }}" aria-label="{{ course_title | escape }}: {{ note_title | escape }} (PDF)">
+                    <span class="phd-note-text">
+                      <span class="phd-note-name">{{ note_title | escape }}</span>
+                      {% if note.detail %}<span class="phd-note-detail">{{ note.detail | escape }}</span>{% endif %}
+                    </span>
+                    <span class="phd-note-format" aria-hidden="true">PDF <span>↗</span></span>
+                  </a>
+                  {% if tex_file %}<a class="phd-tex-link" href="{{ base_path }}{{ tex_url }}" aria-label="{{ course_title | escape }}: {{ note_title | escape }} (TEX)">TEX</a>{% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </article>
+        {% endfor %}
+        <a class="phd-back-top" href="#main">Volver al inicio ↑</a>
       </section>
     {% endfor %}
   {% endif %}

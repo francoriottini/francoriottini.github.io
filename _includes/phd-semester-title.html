@@ -1,0 +1,9 @@
+{%- assign parts = include.name | split: "-" -%}
+{%- assign year = parts | first | plus: 0 -%}
+{%- assign start_year = year | minus: 1 -%}
+{%- assign term = parts | last -%}
+{%- if parts.size > 1 and year > 0 -%}
+  {{ start_year }}/{{ year }} · {% if term == "S1" %}Semestre 1{% elsif term == "S2" %}Semestre 2{% else %}{{ term | replace: "_", " " }}{% endif %}
+{%- else -%}
+  {{ include.name | replace: "-", " " | replace: "_", " " }}
+{%- endif -%}
