@@ -11,10 +11,14 @@
 }
 
 .research-intro {
-  max-width: 42rem;
   margin-bottom: 2rem;
 
-  p { margin: 0 0 0.65rem; color: var(--site-muted); }
+  p {
+    margin: 0 0 0.65rem;
+    color: var(--site-muted);
+    text-align: left;
+    text-wrap: pretty;
+  }
 
   .research-scholar {
     font-size: 0.8rem;
