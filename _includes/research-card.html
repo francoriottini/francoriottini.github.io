@@ -1,0 +1,33 @@
+<article class="research-card">
+  <a class="research-card-main" href="{{ post.url | relative_url }}">
+    {% if post.research_image %}
+    <div class="research-card-image">
+      <img src="{{ post.research_image | relative_url }}" alt="" width="1200" height="660" loading="lazy" decoding="async">
+    </div>
+    {% endif %}
+    <div class="research-card-heading">
+      <p class="research-card-topic">{{ post.research_topic | escape }}</p>
+      <h3>{{ post.title | escape }}</h3>
+    </div>
+    {% unless post.confidential %}
+      {% if post.research_summary %}<p class="research-card-summary">{{ post.research_summary | escape }}</p>{% endif %}
+    {% endunless %}
+  </a>
+  <div class="research-card-details">
+    {% if post.coauthors %}<p class="research-card-coauthors">With {{ post.coauthors | escape }}</p>{% endif %}
+    <p class="research-card-status">
+      {% if post.status == 'in_progress' %}
+        Work in progress
+      {% else %}
+        {% if post.type == 'Master Thesis' %}Master’s thesis · {% endif %}{% if post.venue %}<i>{{ post.venue | escape }}</i> · {% endif %}{{ post.date | date: '%Y' }}
+      {% endif %}
+    </p>
+    <div class="research-card-links">
+      <a href="{{ post.url | relative_url }}" aria-label="Details: {{ post.title | escape }}">Details <span aria-hidden="true">→</span></a>
+      {% unless post.confidential %}
+        {% if post.paperurl %}<a href="{{ post.paperurl | relative_url | escape }}" aria-label="PDF: {{ post.title | escape }}">PDF <span aria-hidden="true">↗</span></a>{% endif %}
+        {% if post.blogurl %}<a href="{{ post.blogurl | escape }}" aria-label="IDB blog: {{ post.title | escape }}">IDB blog <span aria-hidden="true">↗</span></a>{% endif %}
+      {% endunless %}
+    </div>
+  </div>
+</article>

@@ -1,47 +1,42 @@
 ---
-layout: archive
-title: "Publications"
-permalink: /publications/
+layout: research
+title: "Research"
+permalink: /research/
+redirect_from:
+  - /publications/
 author_profile: true
+description: "Papers and ongoing projects on international trade, economic diplomacy, and the environment."
 ---
 
-<div class="archive-intro" style="margin-bottom: 2em; font-size: 1em; line-height: 1.6;">
-  <p>Here you will find my publications, works in progress, and other (<em>relevant</em>) documents.</p>
-  <p>I hope you find them interesting!</p>
+<div class="research-intro">
+  <p>Papers and ongoing projects on international trade, economic diplomacy, and the environment.</p>
+  {% if site.author.googlescholar %}
+    <a class="research-scholar" href="{{ site.author.googlescholar | escape }}">Google Scholar <span aria-hidden="true">↗</span></a>
+  {% endif %}
 </div>
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{ author.googlescholar }}">my Google Scholar profile</a>.</u>
+{% assign papers = site.publications | sort: 'date' | reverse %}
+{% assign completed = papers | where: 'status', 'completed' %}
+{% assign ongoing = papers | where: 'status', 'in_progress' %}
+
+{% if completed.size > 0 %}
+<section class="research-section" aria-labelledby="research-papers">
+  <h2 id="research-papers" class="research-section-title">Papers</h2>
+  <div class="research-grid">
+    {% for post in completed %}
+      {% include research-card.html %}
+    {% endfor %}
+  </div>
+</section>
 {% endif %}
 
-{% include base_path %}
-
-{% for post in site.publications reversed %}
-  {% if post.status == 'completed' %}
-    {% assign is_published = false %}
-    {% if post.published == true or post.published == "true" %}
-      {% assign is_published = true %}
-    {% endif %}
-
-    {% if is_published %}
-      {% include archive-single.html %}
-    {% else %}
-      <div class="archive-single">
-        <h2 class="archive-title"><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
-        <p>{{ post.type | default: "Unpublished" }} ({{ post.date | date: "%Y" }})</p>
-        <p>{{ post.excerpt }}</p>
-        {% if post.paperurl %}
-          <p>Download: <a href="{{ post.paperurl }}"><u>PDF</u></a></p>
-        {% endif %}
-      </div>
-    {% endif %}
-  {% endif %}
-{% endfor %}
-
-## Work in Progress
-
-{% for post in site.publications reversed %}
-  {% if post.status == 'in_progress' %}
-    {% include archive-single.html %}
-  {% endif %}
-{% endfor %}
+{% if ongoing.size > 0 %}
+<section class="research-section" aria-labelledby="research-progress">
+  <h2 id="research-progress" class="research-section-title">Work in progress</h2>
+  <div class="research-grid">
+    {% for post in ongoing %}
+      {% include research-card.html %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
